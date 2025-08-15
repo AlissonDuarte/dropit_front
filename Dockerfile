@@ -1,11 +1,14 @@
-FROM node:20-slim AS build
+FROM node:18-alpine
 
 WORKDIR /app
 
-COPY package*.json ./
-
-RUN npm install --frozen-lockfile
+COPY package.json package-lock.json ./
+RUN npm ci
 
 COPY . .
 
 RUN npm run build
+
+EXPOSE 3000
+
+CMD ["node", "build", "--host", "0.0.0.0"]
