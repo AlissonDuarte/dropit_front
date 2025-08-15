@@ -65,6 +65,7 @@
     try {
       // Construa a URL com os parâmetros de busca e filtro
       const url = new URL(`${API_URL}/posts/preview`);
+      console.log("url", url);
       url.searchParams.append('page', page);
       
       if (searchQuery && searchQuery.length > 2) {

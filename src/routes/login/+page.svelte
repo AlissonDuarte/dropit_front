@@ -65,7 +65,7 @@
       triggerAlert(
         "error",
         "Erro inesperado",
-        error.message || "Ocorreu um erro durante o login"
+        "Ocorreu um erro durante o login"
       );
     } finally {
       isLoading = false;
