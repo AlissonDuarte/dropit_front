@@ -1,1 +1,1 @@
-export const API_URL="http://api.refugioanonimo.space/api"
+export const API_URL="/api"
