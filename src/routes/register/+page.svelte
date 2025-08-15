@@ -106,7 +106,7 @@ async function handleRegister() {
           </div>
         {/if}
         
-        <ProfilePicture on:photoSelected={uploadPhoto} />
+        <ProfilePicture on:photoSelected={profilePicture} />
 
         <div class="space-y-4">
           <div>
